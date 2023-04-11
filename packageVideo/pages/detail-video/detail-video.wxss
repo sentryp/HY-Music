@@ -1,0 +1,12 @@
+/* pages/detail-video/detail-video.wxss */
+page {
+  height: 100vh;
+}
+
+.video{
+  width: 100%;
+}
+
+.content{
+  height: calc(100% - 225px);
+} 

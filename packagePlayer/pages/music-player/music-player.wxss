@@ -1,0 +1,122 @@
+/* pages/music-player/music-player.wxss */
+.bg-image,.bg-cover{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%; 
+  z-index: -1;
+}
+
+.bg-cover{
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(20px);
+}
+
+.tabs{
+  display: flex;
+  color: #aaa;
+}
+
+.tabs .divider{
+  margin: 0 8rpx;
+}
+
+.tabs .active{
+  color: #fff;
+}
+
+/* 歌曲布局 */
+.music{
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 40rpx 60rpx;
+  font-size: 28rpx;
+  color: #fff;
+}
+
+.music .album{
+  flex: 1;
+}
+
+.music .album .image{
+  width: 100%;
+  border-radius: 12rpx;
+}
+
+.music .info .name{
+  font-size: 48rpx;
+  font-weight: 700;
+}
+
+.music .info .singer{
+  margin-top: 10rpx;
+}
+
+.music .lyric{
+  text-align: center;
+  margin-top: 15rpx;
+  height: 37rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.music .proress{
+  margin: 12rpx 0;
+}
+
+.music .proress .slider{
+  margin: 16rpx 8rpx 10rpx 18rpx;
+}
+
+.music .proress .time{
+  display: flex;
+  justify-content: space-between;
+  font-size: 24rpx;
+}
+
+.music .control {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 12rpx 0;
+}
+
+.music .control .btn {
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.music .control .btn.mode{
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.music .control .btn.play{
+  width: 160rpx;
+  height: 160rpx;
+}
+
+/* 歌词样式 */
+.lyric-list{
+  color: #aaa;
+  font-size: 28rpx;
+  text-align: center;
+  height: 100%;
+}
+
+.lyric-list ::-webkit-scrollbar{
+  display: none;
+}
+
+.lyric-list .item{
+  height: 35px ;
+  line-height: 35px ;
+}
+
+.lyric-list .active{
+  color: #fff;
+  font-size: 40rpx;
+}
